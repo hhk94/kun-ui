@@ -1,5 +1,6 @@
 import KButton from "./kun-button"
 import KTitle from "./kun-title"
+import Vue from 'vue'
 import "./index.scss"
 const components = [
 	KButton,
@@ -8,14 +9,16 @@ const components = [
 ]
 //vue。use使用时，必须要有install方法。参数就是vue。
 const install  = (Vue)=>{
-  for(var key in components){
-	  Vue.component(components[key].name,components[key])
-  }
+	console.log('install')
+	for(var key in components){
+		Vue.component(components[key].name,components[key])
+		console.log(components[key].name)
+	}
 }
 
 
 export default {
-	install,
+	install,	
 	KButton,
 	KTitle
 }

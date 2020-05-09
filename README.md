@@ -19,6 +19,7 @@ Vue.use(KunUI);
 ```
 
 ##### 2.uniapp开发小程序使用
++ 1.具体调用页面
 ```javascript
 import kButton from '../../components/kun-button/kun-button.vue'
 import KTitle from '../../components/kun-title/kun-title.vue'
@@ -29,7 +30,13 @@ export default {
 	}
 }
 ```
++ 2.main.js引用样式
+```javascript
+// #ifdef MP
+import './components/index.scss'
+// #endif
 
+```
 #### 参与贡献
 
 1.  Fork 本仓库

@@ -1,5 +1,10 @@
-$fa-font-path: "./fonts";
-@import "./scss/font-awesome";
+$fa-font-path: "./fontawsome/fonts";
+/* #ifdef MP */
+$fa-font-path: "https://m.cswendu.com/fontawsome/fonts";
+/* #endif */
+
+
+@import "./fontawsome/scss/font-awesome";
 
 
 

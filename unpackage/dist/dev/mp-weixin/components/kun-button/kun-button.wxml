@@ -1,1 +1,1 @@
-<button class="{{['data-v-59bd9500',styles]}}"><text class="data-v-59bd9500"><slot></slot></text></button>
+<button class="{{['data-v-59bd9500',styles]}}"><view class="text data-v-59bd9500"><view hidden="{{!(icon)}}" class="{{['_i data-v-59bd9500',icon_styles]}}" animation="{{animationData}}"></view><text class="data-v-59bd9500"><slot></slot></text></view></button>

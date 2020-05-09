@@ -1,0 +1,1 @@
+<button class="{{['data-v-6594b5a8',styles]}}"><view class="text data-v-6594b5a8"><block wx:if="{{icon}}"><view class="{{['_i data-v-6594b5a8',icon_styles]}}"></view></block><text class="data-v-6594b5a8"><slot></slot></text></view></button>

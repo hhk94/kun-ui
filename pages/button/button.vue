@@ -65,6 +65,32 @@
 			<k-button type="danger" size="medium" round plain>medium</k-button>
 			<k-button type="danger" size="large" round plain >large</k-button>
 		</view>
+		<k-title type="h2">块级按钮</k-title>
+		<view >
+			<k-button type="primary" size="small" round plain block>small</k-button>
+			<k-button type="primary" size="medium"  block>medium</k-button>
+			<k-button type="primary" size="large" round block >large</k-button>
+		</view>
+		<k-title type="h2">图标按钮</k-title>
+		<view class="default">
+			<k-button type="primary" size="small" icon="fa-bar-chart" >small</k-button>
+			<k-button type="primary" size="medium" icon="fa-bar-chart">medium</k-button>
+			<k-button type="primary" size="large" icon="fa-bar-chart" plain>large</k-button>
+		</view>
+		<k-title type="h2">图标旋转/加载</k-title>
+		<view class="default">
+			<k-button type="primary" size="small" icon="fa-spinner" icon_rotate>small</k-button>
+			<k-button type="primary" size="medium" icon="fa-spinner" icon_rotate>medium</k-button>
+			<k-button type="primary" size="large" icon="fa-spinner" plain icon_rotate>large</k-button>
+		</view>
+		<k-title type="h2" >点击加载</k-title>
+		<view class="">
+			<k-button type="primary" size="medium" 
+			:icon="icon" 
+			:icon_rotate="loading" 
+			block 
+			@click.native="enterLoading()">medium</k-button>
+		</view>
 	</view>
 </template>
 
@@ -72,25 +98,45 @@
 	// #ifdef MP
 	import kButton from '../../components/kun-button/kun-button.vue'
 	import KTitle from '../../components/kun-title/kun-title.vue'
+	// #endif
 	export default {
 		data() {
 			return {
-				
+				loading:false,
+				icon:''
 			};
 		},
+		// #ifdef MP
 		components:{
 			kButton,
 			KTitle
+		},
+		// #endif
+		mounted() {
+			console.log(this)
+		},
+		methods:{
+			enterLoading(){
+				console.log('a')
+				this.loading = true
+				this.icon = 'fa-spinner'
+				setTimeout(() => {
+				  this.loading = false
+				  this.icon = ''
+				}, 2000)
+			}
 		}
 	}
-	// #endif
+	
 </script>
 
 <style lang="scss">
+
 .plain,.default{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20rpx;
+	flex-wrap: wrap;
 }
 
 </style>

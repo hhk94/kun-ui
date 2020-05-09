@@ -1,8 +1,13 @@
 <template name="KButton">
 	<button :class="styles">
-		<text>
-			<slot></slot>
-		</text>
+		<view class="text">
+			
+				<i :animation="animationData" :class="icon_styles" v-show="icon"></i>
+			
+			<text>
+				<slot></slot>
+			</text>
+		</view>
 	</button>
 	
 </template>
@@ -30,29 +35,96 @@
 			disabled:{//可选
 				type: Boolean,
 			},
-			size:{//尺寸
+			size:{//尺寸small.medium.large
 				type: String,
 				default: 'small'
+			},
+			block:{//可选
+				type: Boolean,
+			},
+			icon:{//图标
+				type: String,
+			},
+			icon_rotate:{
+				type: Boolean,
 			}
 		},
 		computed: {
 			/* 根据不同的props，展示按钮样式 */
 			styles: {
 				get() {
-					return ['sp-button',  this.type, this.plain?'plain':'',this.size,this.round?'round':'',this.disabled?'disabled':'']
+					return ['sp-button',  this.type, 
+					this.plain?'plain':'',this.size,
+					this.round?'round':'',
+					this.disabled?'disabled':'',
+					this.block?'block':'',
+					]
+				}
+			},
+			icon_styles:{
+				get(){
+					return['fa',this.icon,
+					this.icon_rotate?'icon_rotate':'',
+					]
 				}
 			}
 		},
 		data() {
-		return {
-
-		};
+			return {
+				animationData: {},
+				animation:null
+			};
+		},
+		mounted() {
+			console.log('onShow')
+			var animation = uni.createAnimation({
+				duration: 1000,
+				timingFunction: 'ease',
+			})
+			this.animation = animation
+		},
+		watch:{
+			'icon':function(val){
+				console.log(val)
+				if(val){
+					 this.rotateAndScale()
+				}else{
+					this.norotateAndScale()
+				}
+			}
+		},
+		methods:{
+			// 定义动画内容
+			rotateAndScale() {
+				// 定义动画内容
+				this.animation.rotate(45).scale(12, 2).step()
+				// 导出动画数据传递给data层
+				this.animationData = this.animation.export()
+			},
+			norotateAndScale() {
+				this.animation.rotate(0).scale(1, 1).step()
+				this.animationData = this.animation.export()
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 @import '../init.scss';
+@keyframes rotate{
+	from{
+		transform:rotate(0deg)
+		}
+	to{
+		transform:rotate(360deg)
+	}
+}
+// .fade-enter-active,.fade-leave-active {
+//   transition: opacity .5s;
+// }
+// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+//   opacity: 0;
+// }
 .sp-button {
     width: fit-content;
 	// padding: 0 10rpx;
@@ -60,6 +132,7 @@
     outline: none; /*outline 去除原生的button样式*/
 	box-sizing: border-box;
     /*动画设置*/
+	
     transition: border 0.8s;
     -webkit-transition: border 0.8s;
     transition: background-color 0.1s;
@@ -70,7 +143,7 @@
 	&::after{
 		border: none;
 	}
-	text{
+	.text{
 		margin: 0 auto;
 		text-align: center;
 		box-sizing: border-box;
@@ -78,7 +151,15 @@
 		display: block;
 		font-size: 24rpx;
 		position: relative;
+		i{
+			margin-right: 4rpx;
+			line-height: 60rpx;
+			&.icon_rotate{
+				animation: rotate 1s infinite linear;
+			}
+		}
 	}
+	
 	display: inline-block;
 }
 .round{//圆角
@@ -91,7 +172,7 @@
 .medium{
 	height: 80rpx;
 	padding: 0 38rpx;
-	text{
+	.text{
 		line-height: 76rpx;
 		font-size: 30rpx;
 	}
@@ -99,10 +180,13 @@
 .large{
 	height: 100rpx;
 	padding: 0 50rpx;
-	text{
+	.text{
 		line-height: 96rpx;
 		font-size: 36rpx;
 	}
+}
+.block{
+	width: 100%;
 }
 /* ------------------------------------------------normal style*/
 	// plain
