@@ -7,17 +7,28 @@
 软件架构说明
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 1.web使用
+
++ 1.全局调用，在main.js中
+	
+```javascript
+import KunUI from "./components"
+Vue.use(KunUI);
+```
+
+##### 2.uniapp开发小程序使用
+```javascript
+import kButton from '../../components/kun-button/kun-button.vue'
+import KTitle from '../../components/kun-title/kun-title.vue'
+export default {
+	components:{
+		kButton,
+		KTitle
+	}
+}
+```
 
 #### 参与贡献
 
