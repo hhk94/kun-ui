@@ -1,0 +1,1 @@
+<button class="{{['data-v-59bd9500',styles]}}"><text class="data-v-59bd9500"><slot></slot></text></button>
