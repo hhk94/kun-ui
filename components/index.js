@@ -1,11 +1,14 @@
 import KButton from "./kun-button"
 import KTitle from "./kun-title"
+import { KGrid,KGridItem,KBadge } from "./kun-grid";
 import Vue from 'vue'
 import "./index.scss"
 const components = [
 	KButton,
-	KTitle
-	
+	KTitle,
+	KGrid,
+	KGridItem,
+	KBadge
 ]
 //vue。use使用时，必须要有install方法。参数就是vue。
 const install  = (Vue)=>{
@@ -20,5 +23,8 @@ const install  = (Vue)=>{
 export default {
 	install,	
 	KButton,
-	KTitle
+	KTitle,
+	KGrid,
+	KGridItem,
+	KBadge
 }

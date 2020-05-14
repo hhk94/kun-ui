@@ -4,7 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<view @click="go_to_button">按钮</view>
+		<view @click="go_to('button')">按钮</view>
+		<view @click="go_to('title')">标题</view>
+		<view @click="go_to('grid')">宫格</view>
 	</view>
 </template>
 
@@ -19,11 +21,11 @@
 
 		},
 		methods: {
-			go_to_button:function(){
+			go_to:function(item){
 				uni.navigateTo({
-					url:'/pages/button/button'
+					url:'/pages/'+item+'/'+item
 				})
-			}
+			},
 		}
 	}
 </script>

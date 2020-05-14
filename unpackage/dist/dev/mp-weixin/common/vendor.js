@@ -8531,7 +8531,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "kun-ui" }, "pages/button/button": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "kun-ui", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "kun-ui", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/button/button": { "usingComponents": { "k-button": "/components/kun-button/kun-button", "k-title": "/components/kun-title/kun-title" }, "usingAutoImportComponents": {} }, "pages/title/title": { "usingComponents": { "k-title": "/components/kun-title/kun-title" }, "usingAutoImportComponents": {} }, "pages/grid/grid": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "kun-ui", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */

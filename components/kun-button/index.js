@@ -1,7 +1,7 @@
-import Button from "./kun-button.vue";
+import KButton from "./kun-button.vue";
 
-Button.install = (Vue)=>{
-Vue.component(Button.name,Button)
+KButton.install = (Vue)=>{
+Vue.component(KButton.name,KButton)
 }
 
-export default Button;
+export default KButton;

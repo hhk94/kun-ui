@@ -45,6 +45,13 @@ to {
             transform: rotate(360deg);
 }
 }
+.fade-enter-active.data-v-59bd9500, .fade-leave-active.data-v-59bd9500 {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.fade-enter.data-v-59bd9500, .fade-leave-to.data-v-59bd9500 {
+  opacity: 0;
+}
 .sp-button.data-v-59bd9500 {
   width: -webkit-fit-content;
   width: fit-content;

@@ -1,7 +1,7 @@
-import Title from "./kun-title.vue";
+import kTitle from "./kun-title.vue";
 
-Title.install = (Vue)=>{
-Vue.component(Title.name,Title)
+kTitle.install = (Vue)=>{
+Vue.component(kTitle.name,kTitle)
 }
 
-export default Title;
+export default kTitle;

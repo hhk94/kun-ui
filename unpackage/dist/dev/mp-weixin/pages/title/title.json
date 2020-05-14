@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "k-title": "/components/kun-title/kun-title"
+  }
+}

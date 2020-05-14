@@ -150,6 +150,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -161,9 +163,9 @@ var _default =
 
   },
   methods: {
-    go_to_button: function go_to_button() {
+    go_to: function go_to(item) {
       uni.navigateTo({
-        url: '/pages/button/button' });
+        url: '/pages/' + item + '/' + item });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

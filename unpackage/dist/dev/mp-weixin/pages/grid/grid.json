@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "k-grid-item": "/components/kun-grid/kun-grid-item/kun-grid-item",
+    "k-grid": "/components/kun-grid/kun-grid/kun-grid",
+    "k-title": "/components/kun-title/kun-title"
+  }
+}

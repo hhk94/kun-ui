@@ -11,6 +11,14 @@
             "style" : {}
 			
         }
+        ,{
+            "path" : "pages/title/title",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/grid/grid",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

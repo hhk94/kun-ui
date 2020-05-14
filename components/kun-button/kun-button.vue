@@ -1,9 +1,9 @@
 <template name="KButton">
-	<button :class="styles">
+	<button :class="styles" @click="_click">
 		<view class="text">
-			
-				<i :animation="animationData" :class="icon_styles" v-show="icon"></i>
-			
+			<transition name="fade">
+				<i  :class="icon_styles" v-show="icon"></i>
+			</transition>
 			<text>
 				<slot></slot>
 			</text>
@@ -71,39 +71,16 @@
 		},
 		data() {
 			return {
-				animationData: {},
-				animation:null
 			};
 		},
 		mounted() {
-			console.log('onShow')
-			var animation = uni.createAnimation({
-				duration: 1000,
-				timingFunction: 'ease',
-			})
-			this.animation = animation
 		},
 		watch:{
-			'icon':function(val){
-				console.log(val)
-				if(val){
-					 this.rotateAndScale()
-				}else{
-					this.norotateAndScale()
-				}
-			}
 		},
 		methods:{
-			// 定义动画内容
-			rotateAndScale() {
-				// 定义动画内容
-				this.animation.rotate(45).scale(12, 2).step()
-				// 导出动画数据传递给data层
-				this.animationData = this.animation.export()
-			},
-			norotateAndScale() {
-				this.animation.rotate(0).scale(1, 1).step()
-				this.animationData = this.animation.export()
+			_click(){
+				this.$emit('click')
+				// console.log('_a')
 			}
 		}
 	}
@@ -119,12 +96,12 @@
 		transform:rotate(360deg)
 	}
 }
-// .fade-enter-active,.fade-leave-active {
-//   transition: opacity .5s;
-// }
-// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-//   opacity: 0;
-// }
+.fade-enter-active,.fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
 .sp-button {
     width: fit-content;
 	// padding: 0 10rpx;
