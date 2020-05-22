@@ -25,6 +25,9 @@
 /* 透明度 */
 /* 文章场景相关 */
 /* 行为相关颜色 */
+.k-title.data-v-6c1d5b80 {
+  width: 100%;
+}
 .title.data-v-6c1d5b80 {
   background-color: #15559a;
   font-size: 36rpx;
@@ -51,7 +54,8 @@
   visibility: visible;
   width: 30rpx;
   height: 4rpx;
-  border-radius: 4rpx;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
   background: #f8f4ed;
 }
 .desc.data-v-6c1d5b80 {
@@ -85,7 +89,8 @@
   position: absolute;
   right: 0;
   top: 0;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
   background-color: #eef7f2;
   color: #1177b0;
 }
@@ -103,7 +108,8 @@
   content: '';
   width: 16rpx;
   height: 16rpx;
-  border-radius: 16rpx;
+  -webkit-border-radius: 16rpx;
+          border-radius: 16rpx;
   border: 4rpx solid #15559a;
   left: 0;
   top: 50%;

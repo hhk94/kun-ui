@@ -1,0 +1,1 @@
+<block wx:if="{{text}}"><text data-event-opts="{{[['tap',[['onClick']]]]}}" class="{{['kun-badge data-v-0b2855b8',inverted?'kun-badge--'+type+' kun-badge--'+size+' kun-badge--'+type+'-inverted':'kun-badge--'+type+' kun-badge--'+size]}}" bindtap="__e">{{text}}</text></block>

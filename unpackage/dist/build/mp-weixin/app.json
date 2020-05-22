@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/button/button"
+    "pages/button/button",
+    "pages/title/title",
+    "pages/grid/grid",
+    "pages/list/list"
   ],
   "subPackages": [],
   "window": {
@@ -10,5 +13,6 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

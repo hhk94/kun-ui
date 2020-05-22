@@ -91,7 +91,8 @@ to {
           animation: rotate-data-v-59bd9500 1s infinite linear;
 }
 .round.data-v-59bd9500 {
-  border-radius: 100rpx;
+  -webkit-border-radius: 100rpx;
+          border-radius: 100rpx;
 }
 .disabled.data-v-59bd9500 {
   cursor: not-allowed;

@@ -1,0 +1,1 @@
+<view class="kun-grid-wrap data-v-3a2a2b76"><view class="{{['kun-grid data-v-3a2a2b76 vue-ref',(showBorder)?'kun-grid--border':'']}}" style="{{'border-left-style:'+('solid')+';'+('border-left-color:'+(borderColor)+';')+('border-left-width:'+(showBorder?'0px':0)+';')}}" id="{{elId}}" data-ref="kun-grid"><slot></slot></view></view>

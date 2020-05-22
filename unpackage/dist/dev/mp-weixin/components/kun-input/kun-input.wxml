@@ -1,0 +1,1 @@
+<view class="Kinput-body data-v-c24f76b8"><view class="{{['input-body data-v-c24f76b8','input-'+type]}}"><view class="desc data-v-c24f76b8"><slot name="desc"></slot></view><view class="input data-v-c24f76b8" style="{{'width:'+('calc(100% - '+width+'rpx)')+';'}}"><slot name="input"></slot></view></view></view>

@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/button/button",
     "pages/title/title",
-    "pages/grid/grid"
+    "pages/grid/grid",
+    "pages/list/list",
+    "pages/layoutPage/layoutPage",
+    "pages/formPage/formPage",
+    "pages/input/input"
   ],
   "subPackages": [],
   "window": {

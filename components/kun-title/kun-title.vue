@@ -1,5 +1,5 @@
 <template name="KTitle">
-	<view>
+	<view class="k-title">
 		<!-- h1 -->
 		<view class="title" v-if="type=='h1'">
 			<text class="english">
@@ -72,6 +72,9 @@
 <style lang="scss" scoped>
 @import '../init.scss';
 // --------------------------------h1
+.k-title{
+	width: 100%;
+}
 .title{
 	background-color:$hk-color;
 	font-size: 36rpx;

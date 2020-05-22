@@ -1,0 +1,1 @@
+<view class="body"><k-title vue-id="2e637200-1" type="h1" bind:__l="__l" vue-slots="{{['english','desc']}}"><text slot="english">list</text><text slot="desc">列表布局</text></k-title><view class="section"><k-title vue-id="2e637200-2" type="h2" num="61" bind:__l="__l" vue-slots="{{['default']}}">h2:可以传数字的标题</k-title></view></view>

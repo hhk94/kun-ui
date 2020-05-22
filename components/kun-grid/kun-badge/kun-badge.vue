@@ -5,7 +5,7 @@
 
 <script>
 	export default {
-		name: 'UniBadge',
+		name: 'KBadge',
 		props: {
 			type: {
 				type: String,

@@ -31,7 +31,8 @@ page, .body {
 .section {
   padding: 20rpx 0;
   background-color: white;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   margin-bottom: 20rpx;
 }
 
@@ -125,7 +126,8 @@ page, .body {
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eee;
-  border-radius: .1em;
+  -webkit-border-radius: .1em;
+          border-radius: .1em;
 }
 .fa-pull-left {
   float: left;

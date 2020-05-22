@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "kun-ui",
-  "usingComponents": {}
+  "usingComponents": {
+    "k-grid-item": "/components/kun-grid/kun-grid-item/kun-grid-item",
+    "k-grid": "/components/kun-grid/kun-grid/kun-grid",
+    "k-badge": "/components/kun-grid/kun-badge/kun-badge",
+    "k-title": "/components/kun-title/kun-title"
+  }
 }

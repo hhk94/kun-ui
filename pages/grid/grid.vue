@@ -64,6 +64,14 @@
 				<text slot="default" >角标参数type：</text>
 				<text slot="content">primary/success/warning/danger/default</text>
 			</k-title>
+			<k-title type="h7">
+				<text slot="default" >点击事件：</text>
+				<text slot="content">@change</text>
+			</k-title>
+			<k-title type="h7">
+				<text slot="default" >是否显示背景色参数：</text>
+				<text slot="content">inverted[Boolean]</text>
+			</k-title>
 			<k-grid :column="3" @change="change" :showBorder='false'>
 				<k-grid-item
 				v-if="index<5"
@@ -74,8 +82,21 @@
 					<image :src="item.src" mode="aspectFill" class="image"></image>
 					<text class="text">{{item.word}}</text>
 					<view v-if="item.badge" class="grid-dot">
-						<!-- <uni-badge :text="item.badge" :type="item.type" :inverted="true"/> -->
-						<uni-badge :text="item.badge" :type="item.type" />
+						<k-badge :text="item.badge" :type="item.type" />
+					</view>
+				</k-grid-item>
+			</k-grid>
+			<k-grid :column="3" @change="change" :showBorder='false'>
+				<k-grid-item
+				v-if="index<5"
+				v-for="(item,index) of list"
+				:key="index"
+				:index="index"
+				>
+					<image :src="item.src" mode="aspectFill" class="image"></image>
+					<text class="text">{{item.word}}</text>
+					<view v-if="item.badge" class="grid-dot">
+						<k-badge :text="item.badge" :type="item.type" :inverted="true"/>
 					</view>
 				</k-grid-item>
 			</k-grid>
@@ -87,6 +108,7 @@
 <script>
 	// #ifdef MP
 	import KGrid from '../../components/kun-grid/kun-grid/kun-grid.vue'
+	import KBadge from '../../components/kun-grid/kun-badge/kun-badge.vue'
 	import KGridItem from '../../components/kun-grid/kun-grid-item/kun-grid-item.vue'
 	import KTitle from '../../components/kun-title/kun-title.vue'
 	// #endif
@@ -152,17 +174,19 @@
 		components:{
 			KGridItem,
 			KGrid,
-			KTitle
+			KBadge,
+			KTitle,
+			
 		},
 		// #endif
 		mounted() {
-			console.log(this)
 			
 		},
 		methods:{
 			change(e){
 				let {index} = e.detail
 				console.log(index)
+				this.list[index].badge && this.list[index].badge++
 			}
 		}
 	}

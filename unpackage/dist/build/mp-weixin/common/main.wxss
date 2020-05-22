@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";page, .body{background-color:#eef7f2}.section{padding:20rpx 0;background-color:#fff;border-radius:10rpx;margin-bottom:20rpx}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

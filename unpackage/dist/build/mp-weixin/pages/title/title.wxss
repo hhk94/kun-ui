@@ -1,0 +1,1 @@
+.body{background-color:#eef7f2}.section{padding:20rpx 0;background-color:#fff;border-radius:10rpx;margin-bottom:20rpx}.plain, .default{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:20rpx;-webkit-flex-wrap:wrap;flex-wrap:wrap}

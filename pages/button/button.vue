@@ -169,7 +169,6 @@
 		},
 		// #endif
 		mounted() {
-			console.log(this)
 		},
 		methods:{
 			enterLoading(){

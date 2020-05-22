@@ -19,6 +19,22 @@
             "path" : "pages/grid/grid",
             "style" : {}
         }
+        ,{
+            "path" : "pages/list/list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/layoutPage/layoutPage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/formPage/formPage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/input/input",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
