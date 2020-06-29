@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "k-title": "/components/kun-title/kun-title",
+    "k-list": "/components/kun-list/kun-list"
+  }
+}

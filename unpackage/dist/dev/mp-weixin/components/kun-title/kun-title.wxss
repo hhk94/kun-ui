@@ -34,7 +34,6 @@
   text-align: center;
   color: #f8f4ed;
   overflow: hidden;
-  margin-bottom: 50rpx;
 }
 .title text.data-v-6c1d5b80 {
   display: block;

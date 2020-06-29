@@ -57,6 +57,7 @@
 			init() {
 				setTimeout(() => {
 					this._getSize((width) => {
+						
 						this.children.forEach((item, index) => {
 							item.width = width
 						})

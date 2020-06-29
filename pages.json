@@ -35,6 +35,14 @@
             "path" : "pages/input/input",
             "style" : {}
         }
+        ,{
+            "path" : "pages/expand/expand",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/poster/poster",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

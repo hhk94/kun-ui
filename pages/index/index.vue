@@ -54,11 +54,11 @@
 						page:'/pages/layoutPage/layoutPage'
 					},
 					{
-						word:'布局组件',
-						src:'/static/c2.png',
+						word:'拓展组件',
+						src:'/static/index/tz.png',
 						badge:1,
 						type: "success",
-						page:'/pages/base/base'
+						page:'/pages/expand/expand'
 					},
 					{
 						word:'布局组件',
@@ -106,6 +106,7 @@
 
 <style scoped lang="scss">
 .section{
+	margin-top: 40rpx;
 	padding: 0 40rpx;
 	background-color: transparent;
 }
@@ -121,6 +122,7 @@
 .image {
 		width: 100rpx;
 		height: 100rpx;
+		margin: 0 auto;
 	}
 .text{
 	font-size: 30rpx;

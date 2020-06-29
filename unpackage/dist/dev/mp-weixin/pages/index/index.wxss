@@ -25,6 +25,7 @@
 /* 透明度 */
 /* 文章场景相关 */
 .section.data-v-731b81d0 {
+  margin-top: 40rpx;
   padding: 0 40rpx;
   background-color: transparent;
 }
@@ -47,6 +48,7 @@
 .image.data-v-731b81d0 {
   width: 100rpx;
   height: 100rpx;
+  margin: 0 auto;
 }
 .text.data-v-731b81d0 {
   font-size: 30rpx;

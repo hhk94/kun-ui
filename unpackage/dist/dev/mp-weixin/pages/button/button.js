@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var kButton = function kButton() {__webpack_require__.e(/*! require.ensure | components/kun-button/kun-button */ "components/kun-button/kun-button").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-button/kun-button.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KTitle = function KTitle() {__webpack_require__.e(/*! require.ensure | components/kun-title/kun-title */ "components/kun-title/kun-title").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-title/kun-title.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var kButton = function kButton() {__webpack_require__.e(/*! require.ensure | components/kun-button/kun-button */ "components/kun-button/kun-button").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-button/kun-button.vue */ 104));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KTitle = function KTitle() {__webpack_require__.e(/*! require.ensure | components/kun-title/kun-title */ "components/kun-title/kun-title").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-title/kun-title.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

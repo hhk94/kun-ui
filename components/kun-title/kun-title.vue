@@ -82,7 +82,7 @@
 	
 	color:$hk-bg;
 	overflow: hidden;
-	margin-bottom: 50rpx;
+	// margin-bottom: 50rpx;
 	text{
 		display: block;
 		margin: 20rpx 0;

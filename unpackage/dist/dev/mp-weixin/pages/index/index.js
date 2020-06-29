@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var KGrid = function KGrid() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-grid/kun-grid */ "components/kun-grid/kun-grid/kun-grid").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-grid/kun-grid.vue */ 68));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KBadge = function KBadge() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-badge/kun-badge */ "components/kun-grid/kun-badge/kun-badge").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-badge/kun-badge.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KGridItem = function KGridItem() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-grid-item/kun-grid-item */ "components/kun-grid/kun-grid-item/kun-grid-item").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-grid-item/kun-grid-item.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KTitle = function KTitle() {__webpack_require__.e(/*! require.ensure | components/kun-title/kun-title */ "components/kun-title/kun-title").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-title/kun-title.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var KGrid = function KGrid() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-grid/kun-grid */ "components/kun-grid/kun-grid/kun-grid").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-grid/kun-grid.vue */ 76));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KBadge = function KBadge() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-badge/kun-badge */ "components/kun-grid/kun-badge/kun-badge").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-badge/kun-badge.vue */ 83));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KGridItem = function KGridItem() {__webpack_require__.e(/*! require.ensure | components/kun-grid/kun-grid-item/kun-grid-item */ "components/kun-grid/kun-grid-item/kun-grid-item").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-grid/kun-grid-item/kun-grid-item.vue */ 90));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var KTitle = function KTitle() {__webpack_require__.e(/*! require.ensure | components/kun-title/kun-title */ "components/kun-title/kun-title").then((function () {return resolve(__webpack_require__(/*! ../../components/kun-title/kun-title.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -192,11 +192,11 @@ __webpack_require__.r(__webpack_exports__);
         page: '/pages/layoutPage/layoutPage' },
 
       {
-        word: '布局组件',
-        src: '/static/c2.png',
+        word: '拓展组件',
+        src: '/static/index/tz.png',
         badge: 1,
         type: "success",
-        page: '/pages/base/base' },
+        page: '/pages/expand/expand' },
 
       {
         word: '布局组件',

@@ -7,7 +7,9 @@
     "pages/list/list",
     "pages/layoutPage/layoutPage",
     "pages/formPage/formPage",
-    "pages/input/input"
+    "pages/input/input",
+    "pages/expand/expand",
+    "pages/poster/poster"
   ],
   "subPackages": [],
   "window": {
